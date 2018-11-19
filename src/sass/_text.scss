@@ -1,0 +1,50 @@
+.color-default {
+  color: $color-text;
+}
+
+.color-gray {
+  color: #999;
+}
+
+.color-white{
+  color: #ffffff;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-success {
+  color: $color-success;
+}
+.color-danger {
+  color: $color-danger;
+}
+.color-warning {
+  color: $color-warning;
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-justify {
+  text-align: justify;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-underline {
+  text-decoration: underline;
+}
+.txt-bold {
+  font-weight: $font-weight-bold;
+}
+.txt-normal {
+  font-weight: $font-weight;
+}
+.txt-light {
+  font-weight: $font-weight-light;
+}
+.txt-break {
+  word-wrap: break-word;
+}

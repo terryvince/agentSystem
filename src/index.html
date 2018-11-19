@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <title><%=appName %></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <% if (dll) { %><script src="vendor.dll.js"></script><% } %>
+  <% if (env === "production") { %><link href="main.css" rel="stylesheet"/><% } %>
+  <style type="text/css">
+      div[class*='col']{
+        border: 1px solid #eee;
+      }
+      tr:visited{
+        background: #eee;
+      }
+      tr:hover{
+        background: #eee;
+      }
+      tr:focus{
+        background: #eee;
+      }
+      tr:active{
+        background: #eee;
+      }
+      .q{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .item{
+        width: 30%;
+        height: 50px;
+        margin-right: 10px;
+        background: #0894ec;
+      }
+  </style>
+</head>
+<body>
+<header class="bar bar-nav">
+  <a class="btn btn-link pull-left" href=""><span class="icon icon-left"></span>&nbsp;&nbsp;返回</a>
+  <h1 class="title">标题</h1>
+</header>
+<div class="content">
+  <p class="content-margin"><a class="btn btn-fill disabled">测试</a></p>
+  <p class="content-margin"><a class="btn btn-fill btn-danger">测试</a></p>
+  <p class="content-margin"><a class="btn btn-fill btn-success">测试</a></p>
+  <p class="content-margin"><a class="btn btn-fill btn-warning">测试</a></p>
+  <p class="content-margin"><a class="btn btn-fill btn-light">测试</a></p>
+  <p class="content-margin"><a class="btn btn-fill btn-dark">测试</a></p>
+  <div class="row content-padding">
+    <div class="col-2">1112</div>
+    <div class="col-20">3333</div>
+    <div class="col-2">333</div>
+  </div>
+  <div class="q content-padding">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</div>
+<nav class="bar bar-tab">
+  <a class="tab-item active" href="#">
+    <i class="icon">111</i>
+    <span class="tab-label">标题1</span>
+  </a>
+  <a class="tab-item" href="#">
+    <i class="icon">222</i>
+    <span class="tab-label">标题2</span>
+  </a>
+  <a class="tab-item" href="#">
+    <i class="icon"></i>
+    <span class="tab-label">标题1</span>
+  </a>
+  <a class="tab-item" href="#">
+    <i class="icon"></i>
+    <span class="tab-label">标题1</span>
+  </a>
+</nav>
+<script src="main.js"></script>
+</body>
+</html>
