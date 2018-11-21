@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.agentBind %></title>
+  <%- include('template/head.html') %>
+  <style>
+    .ico{
+      width: .35rem;
+    }
+  </style>
+</head>
+<body class="bg-f3">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">代理绑定</h1>
+</header>
+<div class="content color-body-gray">
+  <ul class="h-list">
+    <li class="item row big">
+        <div class="item-left col-3 fs-32 flex flex-cross-center" style="flex:0 0 auto;">
+          <img class="ico" src="static/40.png" alt="">
+        </div>
+        <div class="item-right col-20">
+          <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入需要绑定的代理账号">
+        </div>
+    </li>
+    <li class="item row big">
+      <div class="item-left col-3 fs-32 flex flex-cross-center" style="flex:0 0 auto;">
+        <img class="ico" src="static/26.png" alt="">
+      </div>
+      <div class="item-right col-20">
+        <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入密码">
+      </div>
+    </li>
+  </ul>
+  <a href="" class="btn-blue" style="margin-top: .36rem">立即绑定</a>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

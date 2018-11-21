@@ -1,27 +1,27 @@
 .color-default {
-  color: $color-text;
+  color: #{$color-text}!important;
 }
 
 .color-gray {
-  color: #999;
+  color: #999!important;
 }
 
 .color-white{
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 .color-primary {
-  color: $color-primary;
+  color: #{$color-primary}!important;
 }
 
 .color-success {
-  color: $color-success;
+  color: #{$color-success}!important;
 }
 .color-danger {
-  color: $color-danger;
+  color: #{$color-danger}!important;
 }
 .color-warning {
-  color: $color-warning;
+  color: #{$color-warning}!important;
 }
 
 .txt-center {

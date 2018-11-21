@@ -1,6 +1,7 @@
 
 import './main.scss';
-
+import jQuery from 'jquery';
+const $ = jQuery;
 // const config = CONFIG;
 //
 // function title () {
@@ -8,3 +9,8 @@ import './main.scss';
 // }
 //
 // title();
+$(function () {
+  $('header .icon-left').click(function () {
+    history.back();
+  });
+});

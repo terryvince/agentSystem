@@ -5,25 +5,12 @@ html {
   color: #333;
   font-family: $font-family-default;
   box-sizing: border-box;
+  background: white;
 }
 @media screen and (min-width: 750px){
   html{
     font-size: 100px;
   }
-}
-
-body {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-family: $font-family-default;
-  font-size: $font-size-default;
-  line-height: 1.5;
-  color: $color-text;
-  background: $color-bg;
-  overflow: hidden;
 }
 
 * {
@@ -215,6 +202,23 @@ select{
 }
 .fs-36 {
   font-size: 0.36rem;
+}
+
+body {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  line-height: 1.5;
+  color: $color-text;
+  background: $color-bg;
+  overflow: hidden;
+  max-width: 768px;
+  margin: auto auto;
 }
 
 .content {

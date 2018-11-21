@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.rechargeCenter %></title>
+  <%- include('template/head.html') %>
+  <style>
+  .h-list .item .item-left{
+    color: #575757;
+    font-size: .36rem;
+  }
+  </style>
+</head>
+<body class="bg-f3">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">充值中心</h1>
+</header>
+<div class="content">
+  <ul class="h-list">
+    <li class="item row">
+        <div class="item-left col-16 fs-32">商品：会员充值</div>
+        <div class="item-right col-8 txt-right">
+          <a class="rc-pay-100" class="fs-32" href="">充100元</a>
+        </div>
+    </li>
+    <li class="item row">
+        <div class="item-left col-24 fs-32">
+          <span class="rc-selpay block fs-30">请选择支付方式：</span>
+          <img class="rc-wx-pay" src="static/34.png" alt="">
+        </div>
+    </li>
+    <li class="item row">
+        <div class="item-left col-16 fs-32">需支付：<span class="color-danger">100.00元</span></div>
+        <div class="item-right col-8">
+          <a href="" class="rc-pay">立即支付</a>
+        </div>
+    </li>
+  </ul>
+  <a href="" class="rc-payed btn-blue">我已完成支付</a>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

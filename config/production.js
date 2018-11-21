@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   env: 'production',
 
-  appName: 'frontend templet',
+  appName: 'agent system',
 
   output: path.resolve(__dirname, '../dist'),
 

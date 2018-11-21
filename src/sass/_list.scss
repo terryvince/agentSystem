@@ -1,0 +1,30 @@
+.h-list{
+  background: white;
+  color: #424242;
+  font-size: .32rem;
+  .item{
+    &>a{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &.big{
+      padding:.4rem $bar-side-spacing;
+    }
+    overflow: hidden;
+    padding:.3rem $bar-side-spacing;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include thinLine(down, $border-default-color);
+    .item-left{
+      flex: auto;
+      text-align: left;
+    }
+    .item-right{
+      flex: auto;
+      text-align: right;
+    }
+  }
+}
