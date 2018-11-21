@@ -53,6 +53,6 @@
     "webpack-command": "^0.4.1"
   },
   "dependencies": {
-    "jquery": "^1.12.4"
+    "jquery": "^3.3.1"
   }
 }
