@@ -3,9 +3,13 @@
 <head>
   <title><%=title.agentRegister %></title>
   <%- include('template/head.html') %>
-  <style>
-    div.content-margin{
-      margin: .3rem;
+  <style type="text/css">
+    .h-list .item-left{
+      width: 18.8%!important;
+    }
+    input:disabled{
+      background: none;
+      color: #a1a1a1!important;
     }
   </style>
 </head>
@@ -14,35 +18,70 @@
   <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
   <h1 class="title color-white fs-32">代理注册</h1>
 </header>
-<div class="content content-margin">
-  <p class="ar-p fs-32">您已选择代理&nbsp;“跑胡子”&nbsp;游戏</p>
-  <div class="ar-card-bg1">
-    <p class="p1 fs-28">开通代理卖卡权限需预存</p>
-    <p class="p2 fs-36 txt-bold lh-2_">100元等值圈卡</p>
-    <div class="width-1-1 clearfix">
-      <div class="width-1-2 pull-left">
-        <img class="card-img" src="static/21.png" alt="">
+<div class="content color-body-gray">
+  <ul class="h-list">
+    <li class="item row big">
+      <div class="item-left col-4 fs-32 flex-main-between" style="color: #a1a1a1">
+        <span>代</span>
+        <span>理</span>
+        <span>码</span>
       </div>
-      <div class="width-1-2 pull-left txt-right">
-        <a href="" class="ar-card-btn ar-card-btn1">预存开通</a>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" disabled value="778322" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入代理码">
       </div>
-    </div>
-  </div>
-  <div class="ar-card-bg2 rel-position">
-    <p class="p">
-      <span class="fs-36 txt-bold">我是代理</span>
-      <span class="w2 fs-28">去绑定已有代理账号</span>
-    </p>
-    <div class="card-down width-1-1 clearfix">
-      <div class="width-1-2 pull-left">
-        <img class="card-img" src="static/29.png" alt="">
+    </li>
+    <li class="item row big">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>账</span>
+        <span>号</span>
       </div>
-      <div class="width-1-2 pull-left txt-right" style="line-height: 1.38rem">
-        <a href="" class="ar-card-btn ar-card-btn2">立刻绑定</a>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入账号">
       </div>
-    </div>
-  </div>
+    </li>
+    <li class="item row big">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>密</span>
+        <span>码</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入密码">
+      </div>
+    </li>
+    <li class="item row big">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>确</span>
+        <span>认</span>
+        <span>密</span>
+        <span>码</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请确认密码">
+      </div>
+    </li>
+    <li class="item row big">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>手</span>
+        <span>机</span>
+        <span>号</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入手机号">
+      </div>
+    </li>
+    <li class="item row big">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>中</span>
+        <span>文</span>
+        <span>姓</span>
+        <span>名</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入中文姓名">
+      </div>
+    </li>
+  </ul>
+  <a href="" class="btn-blue" style="margin-top: .36rem">完成注册，进入代理后台</a>
 </div>
-<script src="main.js"></script>
 </body>
 </html>

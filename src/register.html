@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.register %></title>
+  <%- include('template/head.html') %>
+  <style>
+    .ico{
+      width: .35rem;
+    }
+  </style>
+</head>
+<body class="bg-f3">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">创建登录账号</h1>
+</header>
+<div class="content color-body-gray">
+  <div class="bg-white">
+    <p class="content-padding color-danger fs-26">温馨提醒：系统升级，原有推广员、代理账号停用，改为游戏账号登录，系统检测到你尚未设置游戏账号，请在下方完善你的游戏账号</p>
+    <ul class="h-list">
+      <li class="item row big">
+        <div class="item-left col-3 fs-32 flex flex-cross-center" style="flex:0 0 auto;">
+          <img class="ico" src="static/40.png" alt="">
+        </div>
+        <div class="item-right col-20">
+          <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="账号名（可使用手机号）">
+        </div>
+      </li>
+      <li class="item row big">
+        <div class="item-left col-3 fs-32 flex flex-cross-center" style="flex:0 0 auto;">
+          <img class="ico" src="static/26.png" alt="">
+        </div>
+        <div class="item-right col-20">
+          <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="密码">
+        </div>
+      </li>
+      <li class="item row big">
+        <div class="item-left col-3 fs-32 flex flex-cross-center" style="flex:0 0 auto;">
+          <img class="ico" src="static/26.png" alt="">
+        </div>
+        <div class="item-right col-20">
+          <input type="text" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="确认密码">
+        </div>
+      </li>
+    </ul>
+    <div style="padding: .5rem 0">
+      <p class="color-8e content-padding fs-24">请完善账号，该账号将作为游戏（代理）登录的唯一凭证</p>
+    </div>
+  </div>
+  <a href="" class="btn-blue" style="margin-top: .36rem">确认创建账号</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.dividendDetail %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .left-20{
+      margin-left: .2rem;
+    }
+  </style>
+</head>
+<body class="bg-f3 dd">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">分红详情</h1>
+  <%- include('template/menunav.html') %>
+</header>
+<div class="content color-body-gray">
+  <div class="card">
+    <div class="card-header">代理ID：687</div>
+    <div class="card-content">
+      <div class="card-content-inner" style="line-height: 1.8">
+        <p>账号：ceshi1</p>
+        <p>当月销售等级：lv3</p>
+        <p>当月积分：3000</p>
+        <p>分红：0元</p>
+        <p>下级代理数量：0</p>
+        <p class="color-danger fs-28 top-20">注：(积分与分红均包含该代理的下级充值与分红)</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

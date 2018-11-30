@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.noAuth %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .btn{
+      width: 3.84rem;
+      height: .84rem;
+      line-height: .84rem!important;
+      margin-top: .64rem;
+    }
+  </style>
+</head>
+<body class="bg-f3 na">
+
+<header class="bar bar-nav bg-head-blue">
+  <h1 class="title color-white fs-32">提示信息</h1>
+</header>
+
+<div class="content color-body-gray">
+  <div class="flex-cross-center">
+    <img class="mj-ico" src="static/2.png" alt="">
+    <p class="mj-word color-a7 fs-36">暂无权限</p>
+    <p class="p-sorry fs-30">抱歉，您暂未开通“成都麻将”的玩法权限~</p>
+    <p class="p-sorry fs-30">若有疑问，请联系官方客服。</p>
+    <a href="" class="btn btn-fill btn-primary bg-head-blue">返回我的代理后台</a>
+    <p class="fs-30 color-blue lh-2_5" id="goto">6秒后自动跳转</p>
+  </div>
+</div>
+<script type="text/javascript">
+  var $go = $('#goto');
+  var i=6;
+  $go.html(i+'秒后自动跳转');
+  var timer=setInterval(function () {
+    $go.html(--i+'秒后自动跳转');
+    if(i<=0){
+      clearInterval(timer);
+      timer = null;
+      // todo jump
+      location.href = location.href;
+    }
+  },1000)
+</script>
+</body>
+</html>

@@ -4,79 +4,165 @@
   <title><%=title.index %></title>
   <%- include('template/head.html') %>
   <style type="text/css">
-      div[class*='col']{
-        border: 1px solid #eee;
-      }
-      tr:visited{
-        background: #eee;
-      }
-      tr:hover{
-        background: #eee;
-      }
-      tr:focus{
-        background: #eee;
-      }
-      tr:active{
-        background: #eee;
-      }
-      .q{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        flex-wrap: wrap;
-      }
-      .item{
-        width: 30%;
-        height: 50px;
-        margin-right: 10px;
-        background: #0894ec;
-      }
+    .icon-right{
+      color: #d1d1d1;
+    }
+    .item-left img{
+      width: .42rem;
+    }
+    .item-left{
+      -webkit-align-items:center;
+      -webkit-box-align:center;
+      align-items:center;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:flex
+    }
+    .notify-p{
+      -webkit-animation: move 15s infinite linear;
+      -o-animation: move 15s infinite linear;
+      animation: move 15s infinite linear;
+    }
   </style>
 </head>
-<body>
-<header class="bar bar-nav">
-  <a class="btn btn-link pull-left"><span class="icon icon-left"></span>&nbsp;&nbsp;返回</a>
-  <h1 class="title">标题</h1>
-</header>
-<div class="content">
-  <div class="width-1-1 content-padding">
-    <% for (key in title){ %>
-    <a href="<%= key %>.html" class="fs-32">
-      <%= title[key] %>
-    </a>
-    <% } %>
-  </div>
-  <p class="content-margin"><a class="btn btn-fill disabled">测试</a></p>
-  <p class="content-margin"><a class="btn btn-fill btn-danger">测试</a></p>
-  <p class="content-margin"><a class="btn btn-fill btn-success">测试</a></p>
-  <p class="content-margin"><a class="btn btn-fill btn-warning">测试</a></p>
-  <p class="content-margin"><a class="btn btn-fill btn-light">测试</a></p>
-  <p class="content-margin"><a class="btn btn-fill btn-dark">测试</a></p>
-  <!--<div class="row content-padding">-->
-    <!--<div class="col-2">1112</div>-->
-    <!--<div class="col-20">3333</div>-->
-    <!--<div class="col-2">333</div>-->
-  <!--</div>-->
+<body class="bg-f3 ind">
 
+<header class="ind-head">
+
+  <div class="menu-wrap">
+    <img class="menu-ico" src="static/4.png" alt="">
+    <div class="menu">
+      <div class="h-list box-shadow">
+        <a href="index.html" class="block item">
+          <div class="item-left">
+            <img src="static/41.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">代理首页</span>
+          </div>
+        </a>
+
+        <a href="" class="block item">
+          <div class="item-left">
+            <img src="static/28.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">我的亲友圈</span>
+          </div>
+        </a>
+
+        <a href="" class="block item">
+          <div class="item-left">
+            <img src="static/10.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">个人中心</span>
+          </div>
+        </a>
+
+        <a href="" class="block item">
+          <div class="item-left">
+            <img src="static/6.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">给玩家充圈卡</span>
+          </div>
+        </a>
+
+        <a href="" class="block item">
+          <div class="item-left">
+            <img src="static/35.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">我的代理</span>
+          </div>
+        </a>
+
+        <a href="" class="block item">
+          <div class="item-left">
+            <img src="static/5.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">游戏帮助</span>
+          </div>
+        </a>
+
+        <a href="" class="block item">
+          <div class="item-left">
+            <img src="static/32.png" alt="">
+            <span class="fs-32 color-body-gray" style="margin-left: .3rem">刷新本页</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile flex-cross-center">
+    <img class="avatar" src="static/avatar.gif" alt="">
+    <p class="color-white fs-30 name">小猪佩奇LD</p>
+    <p class="fs-26 lh-1" style="color: #bed6ff;">ID:2135654</p>
+  </div>
+
+  <div class="head-down flex-main-between row">
+    <a class="col-10 inline">
+      <img style="height: .3rem" src="static/24.png" alt="">
+      <span class="color-white fs-28">客服中心</span>
+    </a>
+    <div class="col-4 txt-center">
+      <img style="height: .4rem" src="static/31.png" alt="">
+    </div>
+    <a class="col-10 inline txt-right">
+      <img style="height: .3rem" src="static/39.png" alt="">
+      <span class="color-white fs-28">沁园麻将</span>
+      <img src="static/27.png" style="height: .38rem" alt="">
+    </a>
+  </div>
+</header>
+
+<div class="content color-body-gray">
+
+  <div class="notify-wrap row">
+    <img src="static/11.png" style="width: .26rem" alt="">
+    &nbsp;
+    <div class="col-24" style="overflow: hidden;">
+      <div class="notify-p fs-26" style="width: 150%">最新版雀神会，亲友圈在游戏中管理亲友圈在游戏中管理亲友圈在游戏中管理</div>
+    </div>
+  </div>
+  <ul class="h-list">
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/36.png" alt="">
+          <span class="color-64 fs-32" style="margin-left: .28rem">我的玩家</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/28.png" alt="">
+          <span class="color-64 fs-32" style="margin-left: .28rem">我的亲友圈</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/37.png" alt="">
+          <span class="color-64 fs-32" style="margin-left: .28rem">直充业绩查询</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/33.png" alt="">
+          <span class="color-64 fs-32" style="margin-left: .28rem">直充提现管理</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/10.png" alt="">
+          <span class="color-64 fs-32" style="margin-left: .28rem">个人中心</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+  </ul>
 </div>
-<footer class="bar bar-tab">
-  <a class="tab-item active" href="#">
-    <i class="icon">111</i>
-    <span class="tab-label">标题1</span>
-  </a>
-  <a class="tab-item" href="#">
-    <i class="icon">222</i>
-    <span class="tab-label">标题2</span>
-  </a>
-  <a class="tab-item" href="#">
-    <i class="icon"></i>
-    <span class="tab-label">标题1</span>
-  </a>
-  <a class="tab-item" href="#">
-    <i class="icon"></i>
-    <span class="tab-label">标题1</span>
-  </a>
-</footer>
-<script src="main.js"></script>
 </body>
 </html>

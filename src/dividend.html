@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.dividend %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .left-20{
+      margin-left: .2rem;
+    }
+  </style>
+</head>
+<body class="bg-f3 dd">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">分红</h1>
+  <%- include('template/menunav.html') %>
+</header>
+<div class="content color-body-gray">
+  <div class="notify flex-cross-center color-danger fs-30 lh-2_ bg-white">
+    <p>请注意：每日早上10点更新数据，节假日顺延。</p>
+    <p>上次更新时间：2018-11-29 10:10</p>
+  </div>
+  <div class="h-list top-20">
+    <a href="" class="item row big fs-32 color-body-gray">
+        <div class="item-left col-12 flex-align-center">
+          <span>日期：</span>
+          <span class="left-20">2018年04月</span>
+        </div>
+        <div class="item-right col-12 flex-align-center">
+          <span class="left-20">分红:</span>
+          <div class="left-20"><span class="color-primary">0</span>&nbsp;元</div>
+        </div>
+    </a>
+    <a href="" class="item row big fs-32 color-body-gray">
+      <div class="item-left col-12 flex-align-center">
+        <span>日期：</span>
+        <span class="left-20">2018年04月</span>
+      </div>
+      <div class="item-right col-12 flex-align-center">
+        <span class="left-20">分红:</span>
+        <div class="left-20"><span class="color-primary">0</span>&nbsp;元</div>
+      </div>
+    </a>
+    <a href="" class="item row big fs-32 color-body-gray">
+      <div class="item-left col-12 flex-align-center">
+        <span>日期：</span>
+        <span class="left-20">2018年04月</span>
+      </div>
+      <div class="item-right col-12 flex-align-center">
+        <span class="left-20">分红:</span>
+        <div class="left-20"><span class="color-primary">235</span>&nbsp;元</div>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

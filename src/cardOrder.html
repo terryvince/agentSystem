@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.cardOrder%></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+
+  </style>
+</head>
+<body class="bg-f3 co">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">充圈卡、圈卡订单/记录</h1>
+  <%- include('template/menunav.html') %>
+</header>
+<div class="content color-body-gray">
+  <div class="content-padding bg-white" style="padding-top: 0">
+    <div class="flex-main-between h-90 tab gary-line rel-position fs-32">
+      <a class="block height-full width-1-2 txt-center color-body-gray active">给下级代理充圈卡</a>
+      <a class="block height-full width-1-2 txt-center color-body-gray">圈卡订单/记录</a>
+    </div>
+    <div class="fs-30 color-orange lh-1" style="margin: .6rem 0 .2rem">向您的下级代理充圈卡，请确保ID无误！</div>
+    <div class="input-group">
+      <input type="text" class="gary-line-input block h-90 width-full" placeholder="请输入下级代理ID">
+    </div>
+    <a href="" class="btn-blue" style="margin: .6rem 0 0">下一步</a>
+    <div class="row flex-main-center">
+      <p class="col-20 color-danger fs-30 txt-center" style="margin: .4rem 0 0">若卡数不足，不足部分使用兑换券进行充值（0.05张券=1张圈卡）</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var $item = $('.tab').find('a');
+  $item.click(function () {
+    $item.removeClass('active');
+    $(this).addClass('active');
+  })
+</script>
+</body>
+</html>

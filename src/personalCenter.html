@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.personalCenter %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .h-list .item-left{
+      width: 18.8%!important;
+    }
+    .disable-gray input:disabled{
+      background: none;
+      color: #a1a1a1!important;
+    }
+    .disable-black input:disabled{
+      background: none;
+      color: #434343;
+    }
+
+  </style>
+</head>
+<body class="bg-f3 pc">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">个人中心</h1>
+  <%- include('template/menunav.html') %>
+</header>
+<div class="content color-body-gray">
+  <ul class="h-list">
+    <li class="item row big disable-gray">
+      <div class="item-left col-4 fs-32 flex-main-between color-a1">
+        <span>代</span>
+        <span>理</span>
+        <span>账</span>
+        <span>号</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input type="text" disabled value="xddfds" class="fs-32 block no-border height-full width-1-1 color-body-gray">
+      </div>
+    </li>
+    <li class="item row big disable-black" id="phone">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>手</span>
+        <span>机</span>
+        <span>号</span>
+      </div>
+      <div class="col-12 col-offset-1">
+        <input disabled type="text" value="1875654322" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入手机号">
+      </div>
+      <div class="col-offset-1 col-6">
+        <a class="btn btn-fill bg-head-blue color-white">更换</a>
+      </div>
+    </li>
+    <li class="item row big disable-black" id="pwd">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>密</span>
+        <span>码</span>
+      </div>
+      <div class="col-12 col-offset-1">
+        <input disabled type="password" value="12345678910" class="fs-32 block no-border height-full width-1-1 color-body-gray" placeholder="请输入密码">
+      </div>
+      <div class="col-offset-1 col-6">
+        <a class="btn btn-fill bg-head-blue color-white">修改密码</a>
+      </div>
+    </li>
+    <li class="item row big disable-black">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>直</span>
+        <span>充</span>
+        <span>返</span>
+        <span>利</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input disabled type="text" value="60%" class="fs-32 block no-border height-full width-1-1 color-body-gray">
+      </div>
+    </li>
+    <li class="item row big disable-black">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>游</span>
+        <span>戏</span>
+        <span>昵</span>
+        <span>称</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input disabled type="text" value="我了个去" class="fs-32 block no-border height-full width-1-1 color-body-gray">
+      </div>
+    </li>
+    <li class="item row big disable-black">
+      <div class="item-left col-4 fs-32 flex-main-between">
+        <span>游</span>
+        <span>戏</span>
+        <span>I</span>
+        <span>D</span>
+      </div>
+      <div class="item-right col-19 col-offset-1">
+        <input disabled type="text" value="65123" class="fs-32 block no-border height-full width-1-1 color-body-gray">
+      </div>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  /*
+    * 点击切换
+    * 参数：
+    *     $btn 点击的按钮jquery对象
+    *     $input  关联的input框
+    *     obLabel 按钮切换提示文字 {activeLabel:'确定',unActiveLabel:'更换'}
+    *     callback(val) 提交按钮时，返回值
+    * */
+  function clickToggle ($btn,$input,obLabel,callback){
+    $btn.click(function () {
+      var isDisabled  = !!$input.attr('disabled');
+      if(isDisabled){
+        $btn.html(obLabel.activeLabel);
+        $input.removeAttr('disabled').val('');
+      } else {
+        var val = $input.val();
+        $input.attr('disabled','disabled');
+        $btn.html(obLabel.unActiveLabel);
+        callback && callback(val);
+      }
+    });
+  }
+
+  $(function () {
+    var $itemPhone = $('#phone'),
+        $itemPwd = $('#pwd'),
+        $btnPhone = $itemPhone.find('a.btn'),
+        $inpPhone = $itemPhone.find('input'),
+        $btnPwd = $itemPwd.find('a.btn'),
+        $inpPwd = $itemPwd.find('input');
+
+    clickToggle(
+      $btnPhone,
+      $inpPhone,
+      {activeLabel:'确定',unActiveLabel:'更换'},
+      function (val) {
+        console.log(val);
+        //todo ajax
+      }
+    );
+    clickToggle(
+      $btnPwd,
+      $inpPwd,
+      {activeLabel:'确定',unActiveLabel:'修改密码'},
+      function (val) {
+        console.log(val);
+        //todo ajax
+      }
+    );
+  })
+</script>
+</body>
+</html>

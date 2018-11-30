@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.buyQuanCard %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .icon-right{
+      color: #d1d1d1;
+    }
+    .item-left img{
+      width: .42rem;
+    }
+    .item-left{
+      -webkit-align-items:center;
+      -webkit-box-align:center;
+      align-items:center;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:flex
+    }
+  </style>
+</head>
+<body class="bg-f3 bqc">
+
+<header class="bar bar-nav bg-head-blue">
+    <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+    <h1 class="title color-white fs-32">代理系统</h1>
+  <%- include('template/menunav.html') %>
+</header>
+
+<div class="content color-body-gray">
+  <ul class="h-list">
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/6.png" alt="">
+          <span class="color-body-gray fs-32" style="margin-left: .28rem">给玩家充圈卡</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/7.png" alt="">
+          <span class="color-body-gray fs-32" style="margin-left: .28rem">采购圈卡</span>
+          <span class="color-9e fs-32" style="margin-left: .2rem">(兑换券)</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+  </ul>
+  <div class="assets-wrap content-padding">
+    <div class="as-title fs-32 color-body-gray rel-position">
+      我的资产
+    </div>
+    <div class="detail" style="overflow: hidden">
+      <div class="width-1-2 pull-left height-full flex-cross-center">
+        <span class="fs-30 txt-bold">100</span>
+        <span class="color-8e fs-26">兑换券(张)</span>
+      </div>
+      <div class="width-1-2 pull-left height-full flex-cross-center">
+        <span class="fs-30 txt-bold">232</span>
+        <span class="color-8e fs-26">剩余圈卡(张)</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,7 +1,8 @@
 
 import './main.scss';
-import jQuery from 'jquery';
-const $ = jQuery;
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 // const config = CONFIG;
 //
 // function title () {
@@ -10,7 +11,16 @@ const $ = jQuery;
 //
 // title();
 $(function () {
+  // 回退
   $('header .icon-left').click(function () {
     history.back();
+  });
+
+  // 菜单
+  let $menuWrap = $('header .menu-wrap');
+  let $menu = $menuWrap.find('.menu');
+  $menu.hide();
+  $menuWrap.click(function () {
+    $menu.toggle().toggleClass('active');
   });
 });

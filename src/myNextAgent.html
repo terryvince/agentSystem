@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.myNextAgent %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .icon-right {
+      color: #d1d1d1;
+    }
+
+    .item-left img {
+      width: .42rem;
+    }
+
+    .item-left {
+      -webkit-align-items:center;
+      -webkit-box-align:center;
+      align-items:center;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:flex
+    }
+  </style>
+</head>
+<body class="bg-f3 mna">
+
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">我的下级代理</h1>
+  <%- include('template/menunav.html') %>
+</header>
+
+<div class="content color-body-gray">
+  <div class="sec-1 bg-white">
+    <div class="ag-code flex-main-center">
+      <div class="lh-1_5">
+        <span class="fs-32 color-body-gray">下级代理码</span>
+        <span class="color-blue fs-32" style="margin-left: .1rem">987825</span>
+        <span class="fs-20 color-9c">( 此码用于发放给您的下级代理注册使用)</span>
+      </div>
+    </div>
+    <div class="line gary-line"></div>
+    <div class="money flex-cross-center">
+      <span class="color-danger fs-48 txt-bold">158.00元</span>
+      <span class="fs-24 color-89">可提现 (月初提现)</span>
+    </div>
+    <div class="btn-group row flex-main-between">
+      <a class="btn btn-fill btn-success height-full col-12">兑换</a>
+      <a class="btn btn-fill btn-primary bg-head-blue height-full col-12" style="margin-left: .16rem">提现</a>
+    </div>
+  </div>
+  <div class="sec-2 top-20 flex-main-between">
+    <div class="width-1-2 height-full flex-cross-center">
+      <span class="color-danger fs-28">+6274</span>
+      <span class="color-body-gray fs-28">本月分成</span>
+    </div>
+    <div class="width-1-2 height-full flex-cross-center">
+      <span class="color-body-gray fs-28">6274</span>
+      <span class="color-body-gray fs-28">上月分成</span>
+    </div>
+  </div>
+
+  <ul class="h-list top-20">
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/1.png" alt="">
+          <span class="color-body-gray fs-32" style="margin-left: .28rem">下级代理列表</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/6.png" alt="">
+          <span class="color-body-gray fs-32" style="margin-left: .28rem">给代理充圈卡</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+    <li class="item big">
+      <a class="block width-full height-full" href="">
+        <div class="item-left width-1-2 fs-32">
+          <img src="static/9.png" alt="">
+          <span class="color-body-gray fs-32" style="margin-left: .28rem">分红管理</span>
+        </div>
+        <div class="item-right width-1-2"><span class="icon icon-right fs-32"></span></div>
+      </a>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

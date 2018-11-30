@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.myGamer %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+  </style>
+</head>
+<body class="bg-f3 mg">
+
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">我的玩家</h1>
+  <%- include('template/menunav.html') %>
+</header>
+
+<div class="content color-body-gray">
+  <div class="sec-1 flex-align-center bg-white fs-32 flex-wrap content-padding">
+    <label>玩家ID&nbsp;</label><input class="border-color-b5" type="text">&nbsp;&nbsp;
+    <label>昵称&nbsp;</label><input class="border-color-b5" type="text">&nbsp;&nbsp;
+    <a href="" class="search-btn bg-head-blue color-white fs-30">搜索</a>
+  </div>
+  <div class="sec-2 top-20 bg-white">
+    <div class="h-120 flex-align-center content-padding fs-32">
+      <span>合计玩家数：40</span>
+      <span style="margin-left: .7rem">本周新增：</span><span class="color-danger">3</span>
+    </div>
+    <table class="width-full table-striped">
+      <thead class="color-body-gray">
+        <tr>
+          <th>玩家</th>
+          <th>ID</th>
+          <th>注册时间</th>
+        </tr>
+      </thead>
+      <tbody class="color-64">
+        <tr>
+          <td>云水禅心</td>
+          <td>73621</td>
+          <td>2018-11-12</td>
+        </tr>
+        <tr>
+          <td>云水禅心</td>
+          <td>73621</td>
+          <td>2018-11-12</td>
+        </tr>
+        <tr>
+          <td>云水禅心</td>
+          <td>73621</td>
+          <td>2018-11-12</td>
+        </tr>
+        <tr>
+          <td>云水禅心</td>
+          <td>73621</td>
+          <td>2018-11-12</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

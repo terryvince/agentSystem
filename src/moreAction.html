@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.moreAction %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .left-20{
+      margin-left: .20rem;
+    }
+    input:disabled{
+      background: none;
+    }
+  </style>
+</head>
+<body class="bg-f3 ma">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">更多操作</h1>
+  <%- include('template/menunav.html') %>
+</header>
+<div class="content color-body-gray mf">
+  <ul class="h-list down-20">
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span class="txt-bold">名称</span>
+        <input disabled class="left-30 no-border color-blue fs-30" value="一起搓麻将" style="width: 1.5rem"/>
+        <img id="name" src="static/edit.png" class="left-20" style="width: .24rem;" alt="">
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="txt-bold left-30">玩家</span>
+        <span class="color-blue left-30">56人</span>
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span>编号</span>
+        <span class="left-30">51652</span>
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="left-30">圈主ID</span>
+        <input disabled class="left-20 no-border fs-32" value="15685235" style="width: 1.5rem"/>
+        <img id="host" src="static/edit.png" style="width: .24rem;margin-left: .15rem" alt="">
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span>游戏</span>
+        <span class="left-30">血战到底</span>
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="left-30">邀请码</span>
+        <span class="left-20">15685235</span>
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span>支付</span>
+        <span class="left-30">圈主支付</span>
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="left-30">消耗类型</span>
+        <span class="left-30">圈卡</span>
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full width-full flex-align-center">
+        <span>剩余圈卡</span>
+        <span class="left-30">3124张</span>
+        <a href="" class="btn btn-small btn-fill btn-primary bg-head-blue left-30">补卡</a>
+      </div>
+    </li>
+  </ul>
+  <div class="row height-70 flex-main-between content-margin">
+    <a href="" class="btn col-12 btn-fill btn-block btn-success bg-dark-green">创建亲友圈</a>
+    <a href="" class="btn col-12 btn-fill btn-block btn-primary bg-head-blue left-15">成员管理审核</a>
+  </div>
+  <div class="row height-70 flex-main-between content-margin">
+    <a href="" class="btn col-12 btn-fill btn-block btn-primary bg-head-blue">开房统计</a>
+    <a href="" class="btn col-12 btn-fill btn-block btn-primary bg-head-blue left-15">对局统计</a>
+  </div>
+  <div class="row height-70 flex-main-between content-margin">
+    <a href="" class="btn col-12 btn-fill btn-block btn-primary bg-head-blue">排行清除</a>
+    <a href="" class="btn col-12 btn-fill btn-block btn-primary bg-head-blue left-15">圈主支付记录</a>
+  </div>
+</div>
+<script type="text/javascript">
+  var $nameIco = $('#name'),
+      $hostIco = $('#host');
+  var $nameInput = $nameIco.parent().find('input'),
+      $hostInput = $hostIco.parent().find('input');
+
+  function clickToggle ($clickArea,$input,callback){
+    $clickArea.click(function () {
+      var isDisabled  = !!$input.attr('disabled');
+      if(isDisabled){
+        $input.removeAttr('disabled');
+        $input.focus();
+      } else {
+        var val = $input.val();
+        $input.attr('disabled','disabled');
+        callback && callback(val);
+      }
+    });
+  }
+
+  clickToggle($nameIco,$nameInput,function (val) {
+    //todo ajax
+    console.log(val);
+  });
+
+  clickToggle($hostIco,$hostInput,function (val) {
+    //todo ajax
+    console.log(val);
+  });
+</script>
+</body>
+</html>

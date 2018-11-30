@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.paySet %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .select{
+      /*-webkit-appearance: none;*/
+      /*-moz-appearance: none;*/
+      /*appearance: none;*/
+      background: none;
+      border: 1px solid #dddddd;
+      line-height: 1;
+      vertical-align: top;
+      height: .8rem;
+      border-radius: .1rem;
+      text-align: center;
+      padding-left: .1rem;
+    }
+  </style>
+</head>
+<body class="bg-f3">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">支付设置</h1>
+</header>
+<div class="content color-body-gray">
+  <div class="bg-white">
+    <ul class="h-list">
+      <li class="item row big">
+        <div class="item-left col-6 fs-32" style="flex:0 0 auto;">
+          游戏支付：
+        </div>
+        <div class="col-18">
+          <select class="select fs-32 color-body-gray col-12">
+            <option value="">圈主支付</option>
+          </select>
+        </div>
+      </li>
+      <li class="item row big">
+        <div class="item-left col-6 fs-32" style="flex:0 0 auto;">
+          消卡种类：
+        </div>
+        <div class="col-18">
+          <select class="select fs-32 color-body-gray col-12">
+            <option value="">消耗房卡</option>
+          </select>
+        </div>
+      </li>
+      <li class="item row big">
+        <div class="item-left col-6 fs-32" style="flex:0 0 auto;">
+          解散超时：
+        </div>
+        <div class="col-18">
+          <select class="select fs-32 color-body-gray col-12">
+            <option value="">默认</option>
+          </select>
+        </div>
+      </li>
+      <li class="item row big">
+        <div class="item-left col-6 fs-32" style="flex:0 0 auto;">
+          解散等待：
+        </div>
+        <div class="col-18">
+          <select class="select fs-32 color-body-gray col-12">
+            <option value="">默认</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+    <a href="" class="btn-blue" style="margin-top: .36rem">保存设置</a>
+    <div class="content-padding fs-28 top-20" style="color:#555;word-spacing: .08rem">
+      <p class="top-20">亲友圈支付设置</p>
+      <p class="top-20">圈主支付设置：设置为“圈主支付” - “消耗圈卡”（设置为“圈主支付”后，亲友圈内所有玩家开房都将消耗您的圈卡，您就不需要再去充卡卖卡了）</p>
+      <p class="top-20">
+        玩家支付设置：设置为“玩家支付” - “消耗圈卡”（也可以临时设置为“消耗房卡”，或者是“优先消耗圈卡”，
+        这两个选项功能是用于前期亲友圈内一直使用房卡，玩家手中房卡还未消耗完的一种临时解决方案），消耗完毕后就直接设置成“消耗圈卡”）
+      </p>
+      <p class="top-20">玩家直充设置：设置为“玩家支付” - “消耗房卡”</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

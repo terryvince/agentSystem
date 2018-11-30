@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <title><%=title.myFamily %></title>
+  <%- include('template/head.html') %>
+  <style type="text/css">
+    .btn-group>div{
+      margin-bottom: .2rem;
+    }
+    .btn-group>div:last-child{
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body class="bg-f3 mf">
+<header class="bar bar-nav bg-head-blue">
+  <a class="btn btn-link pull-left color-white" href="javascript:;"><span class="icon icon-left"></span></a>
+  <h1 class="title color-white fs-32">我的亲友圈</h1>
+  <%- include('template/menunav.html') %>
+</header>
+<div class="content color-body-gray">
+  <ul class="h-list down-20">
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span class="txt-bold">名称</span>
+        <span class="color-blue left-30">一起搓麻将</span>
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="txt-bold left-30">玩家</span>
+        <span class="color-blue left-30">56人</span>
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span>游戏</span>
+        <span class="left-30">血战到底</span>
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="left-30">邀请码</span>
+        <span class="left-30">15685235</span>
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full col-12 flex-align-center">
+        <span>支付</span>
+        <span class="left-30">圈主支付</span>
+      </div>
+      <div class="height-full col-12 flex-align-center">
+        <span class="left-30">消耗类型</span>
+        <span class="left-30">圈卡</span>
+      </div>
+    </li>
+    <li class="item row big fs-32">
+      <div class="height-full width-full flex-align-center">
+        <span>剩余圈卡</span>
+        <span class="left-30">3124张</span>
+        <a href="" class="btn btn-small btn-fill btn-primary bg-head-blue left-30">补卡</a>
+      </div>
+    </li>
+    <li class="item big width-full fs-32 flex-wrap btn-group">
+      <div class="height-full width-full flex-align-center">
+        <a href="" class="btn width-1-2 btn-fill btn-success bg-dark-green btn-block">支付设置</a>
+        <a href="" class="btn width-1-2 btn-fill btn-primary bg-head-blue btn-block left-15">更多操作</a>
+      </div>
+      <div class="height-full width-full flex-align-center">
+        <a href="" class="btn width-1-2 btn-fill btn-primary bg-head-blue btn-block">更多操作</a>
+        <a href="" class="btn width-1-2 btn-fill btn-primary bg-head-blue btn-block left-15">更多操作</a>
+      </div>
+    </li>
+  </ul>
+  <div class="row height-70 flex-main-center" style="margin-top: .3rem">
+    <a href="" class="btn col-12 btn-fill btn-block btn-round" style="background:#3776e0">创建亲友圈</a>
+  </div>
+</div>
+</body>
+</html>
